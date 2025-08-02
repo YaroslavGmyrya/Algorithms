@@ -34,7 +34,7 @@ void counting_sort_increase(std::vector<int> &data){
 
     for(int i = 0; i < counting.size(); ++i){
         while(counting[i] > 0){
-            data.push_back(counting[i]);
+            data.push_back(i);
             --counting[i];
         }
     }
@@ -57,7 +57,7 @@ void counting_sort_decrease(std::vector<int> &data){
 
     for(int i = counting.size() - 1; i >= 0; --i){
         while(counting[i] > 0){
-            data.push_back(counting[i]);
+            data.push_back(i);
             --counting[i];
         }
     }

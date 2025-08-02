@@ -6,7 +6,7 @@ std::vector<int> generate_numbers(int N){
     std::vector<int> result(N);
 
     for(int i = 0; i < N; ++i){
-        result[i] = rand();
+        result[i] = rand() % 1000000;
     }
 
     return result;
