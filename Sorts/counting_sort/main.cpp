@@ -1,5 +1,5 @@
 #include <iostream>
-#include "includes/buble_sort.hpp"
+#include "includes/counting_sort.hpp"
 #include <chrono>
 
 std::vector<int> generate_numbers(int N){
@@ -25,7 +25,7 @@ int main(){
         test_data = generate_numbers(N);
 
         auto start = std::chrono::high_resolution_clock::now();
-        buble_sort(test_data, ASCENDING);
+        counting_sort(test_data, ASCENDING);
         auto end = std::chrono::high_resolution_clock::now();
 
         auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);

@@ -1,8 +1,8 @@
 GXX = g++
 CXXFLAGS = -std=c++20
 INPUT_FILES_CPP = *.cpp
-OUTPUT_FILE = buble_sort.out
-TEST_FILE = buble_sort_test.txt
+OUTPUT_FILE = insert_sort.out
+TEST_FILE = insert_sort_test.txt
 
 .PHONY: all run test clean graph
 

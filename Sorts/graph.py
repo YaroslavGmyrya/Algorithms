@@ -15,6 +15,9 @@ def main():
 
     input_file = sys.argv[1]
 
+    algo_name_1 = input_file.replace("_test.txt", "")
+    algo_name_2 = input_file.replace("_", " ")
+
     string_template = "N = (\d+) \s TIME = (\d+)"
 
     for input_file in sys.argv[1:]:
@@ -37,11 +40,11 @@ def main():
         
         sns.lineplot(data=data, x='N', y='TIME', color="red")
 
-        plt.title("Buble sort analysis")
+        plt.title(f"{algo_name_2} analysis")
         plt.xlabel('N')
         plt.ylabel("TIME microseconds")
         
-        plt.savefig(f'test/buble_sort.png', dpi=300, bbox_inches='tight')
+        plt.savefig(f'{algo_name_1}.png', dpi=300, bbox_inches='tight')
 
 if __name__ == '__main__':
     main()
