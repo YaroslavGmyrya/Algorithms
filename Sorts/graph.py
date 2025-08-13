@@ -18,7 +18,7 @@ def main():
     algo_name_1 = input_file.replace("_test.txt", "")
     algo_name_2 = input_file.replace("_", " ")
 
-    string_template = "N = (\d+) \s TIME = (\d+)"
+    string_template = r"N = (\d+) \s TIME = (\d+)"
 
     for input_file in sys.argv[1:]:
         n = []
